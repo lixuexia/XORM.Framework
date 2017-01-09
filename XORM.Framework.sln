@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORM.NTool", "XORM.NTool\XORM.NTool.csproj", "{19AA77BA-D31B-48D7-8930-A9F3B2B41910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORM.NBase", "XORM.NBase\XORM.NBase.csproj", "{B40922B4-47E9-4807-A26A-12039A7A1DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XORM.NTest", "XORM.NTest\XORM.NTest.csproj", "{EB5D6FFC-E3CB-4955-A27D-300DB07D4AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db.Ebs.Model", "Db.Ebs.Model\Db.Ebs.Model.csproj", "{9254074D-875A-46B5-AFDA-C378044627A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19AA77BA-D31B-48D7-8930-A9F3B2B41910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AA77BA-D31B-48D7-8930-A9F3B2B41910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AA77BA-D31B-48D7-8930-A9F3B2B41910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AA77BA-D31B-48D7-8930-A9F3B2B41910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40922B4-47E9-4807-A26A-12039A7A1DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40922B4-47E9-4807-A26A-12039A7A1DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40922B4-47E9-4807-A26A-12039A7A1DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40922B4-47E9-4807-A26A-12039A7A1DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB5D6FFC-E3CB-4955-A27D-300DB07D4AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB5D6FFC-E3CB-4955-A27D-300DB07D4AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB5D6FFC-E3CB-4955-A27D-300DB07D4AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB5D6FFC-E3CB-4955-A27D-300DB07D4AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9254074D-875A-46B5-AFDA-C378044627A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9254074D-875A-46B5-AFDA-C378044627A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9254074D-875A-46B5-AFDA-C378044627A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9254074D-875A-46B5-AFDA-C378044627A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
