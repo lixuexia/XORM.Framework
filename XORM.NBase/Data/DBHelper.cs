@@ -11,7 +11,7 @@ namespace XORM.NBase.Data
     public class DBHelper
     {
         /// <summary>
-        /// 数据库类型,1代表SQLSERVER,2代表ORACLE,0代表OLEDB,3代表MYSQL
+        /// 数据库类型,1代表SQLSERVER,2代表MYSQL,0代表OLEDB,3代表ORACLE
         /// </summary>
         private int DBTypeMARK = 1;
         private string _ConnectionMark = "";
@@ -28,6 +28,12 @@ namespace XORM.NBase.Data
                     case 1:
                         {
                             IDbExecute _Executor = new SQLServerImpl();
+                            _Executor.Initialize(ConnConfig.ConnectionString);
+                            return _Executor;
+                        }
+                    case 2:
+                        {
+                            IDbExecute _Executor = new MySQLImpl();
                             _Executor.Initialize(ConnConfig.ConnectionString);
                             return _Executor;
                         }

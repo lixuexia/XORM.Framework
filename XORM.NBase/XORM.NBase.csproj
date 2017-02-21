@@ -31,6 +31,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\MySQL\MySQL.NetLib\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -45,6 +49,7 @@
     <Compile Include="Attr\PrimaryKeyAttribute.cs" />
     <Compile Include="Data\DBHelper.cs" />
     <Compile Include="Data\IDbExecute.cs" />
+    <Compile Include="Data\MySQLImpl.cs" />
     <Compile Include="Log\LogConfig.cs" />
     <Compile Include="Log\Loger.cs" />
     <Compile Include="Log\Saver.cs" />

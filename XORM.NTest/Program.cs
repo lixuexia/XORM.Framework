@@ -168,9 +168,41 @@ namespace XORM.NTest
             //    Console.WriteLine(string.Format("TIME:{3}\t,OrderId:{0}\t,Amount:{1}\t,TrueName:{2}", noo.OrderId, noo.Amount, nob.TrueName, sw.ElapsedMilliseconds.ToString()));
             //    sw.Restart();
             //}
-            
+
             //N_Order_Base N = N_Order_Base.Get("CityId=@CItyId", true, new object[] { 203 });
             //Console.WriteLine(N.TrueName);
+            long demandId = 0L;
+            demand_info.Add(new NTest.demand_info()
+            {
+                cityid = 203,
+                cityname = "北京市",
+                del = 0,
+                estateid = 100001,
+                estatename = "幸福港湾",
+                formid = 1,
+                globalcookie = "",
+                ip = "127.0.0.1",
+                merchantid = 0,
+                mobile = "13811026314",
+                platformtype = 0,
+                provinceid = 0,
+                provincename = "北京市",
+                regionid = 0,
+                regionname = "",
+                sourceid = 1,
+                sourcepageid = 1,
+                sourcepageurl = "http://home.fang.com",
+                targetid = 523011,
+                truename = "测试接入",
+                uniquecookie = "",
+                utmsource = ""
+            }, out demandId);
+            Console.WriteLine(demandId.ToString());
+            demand_info_extend.Add(new NTest.demand_info_extend()
+            {
+                area = 100,
+                demandid = demandId
+            });
 
             Console.Read();
         }

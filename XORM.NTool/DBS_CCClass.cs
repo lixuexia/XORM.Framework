@@ -158,13 +158,20 @@ namespace XORM.NTool
                     }
                     else
                     {
-                        if (info.DefaultVal.ToUpper().Contains("GETDATE"))
+                        if (string.IsNullOrEmpty(info.DefaultVal))
                         {
                             txt.AppendLine("\t\tprivate " + info.CodeTypeStr + " _" + info.ColName + " = DateTime.Now;");
                         }
                         else
                         {
-                            txt.AppendLine("\t\tprivate " + info.CodeTypeStr + " _" + info.ColName + " = DateTime.Parse(\"" + info.DefaultVal.Replace("(", "").Replace(")", "").Replace("'", "") + "\");");
+                            if (info.DefaultVal.ToUpper().Contains("GETDATE") || info.DefaultVal.ToUpper().Contains("CURRENT_TIMESTAMP") || info.DefaultVal.ToUpper().Contains("NOW"))
+                            {
+                                txt.AppendLine("\t\tprivate " + info.CodeTypeStr + " _" + info.ColName + " = DateTime.Now;");
+                            }
+                            else
+                            {
+                                txt.AppendLine("\t\tprivate " + info.CodeTypeStr + " _" + info.ColName + " = DateTime.Parse(\"" + info.DefaultVal.Replace("(", "").Replace(")", "").Replace("'", "") + "\");");
+                            }
                         }
                     }
                 }
